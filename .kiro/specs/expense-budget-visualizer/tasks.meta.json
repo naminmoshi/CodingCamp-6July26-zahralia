@@ -1,0 +1,441 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create the project file structure and `index.html`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688623893
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688634547
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688726033
+      }
+    ],
+    "2.1 Write `css/style.css` with layout and component styles": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688624333
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688734573
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688826181
+      }
+    ],
+    "3.1 Implement `loadTransactions` and `saveTransactions`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688624558
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688857369
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688941275
+      }
+    ],
+    "4.1 Implement `validateForm(name, amount, category)`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688624712
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688858070
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688942026
+      }
+    ],
+    "5.1 Implement `showError`, `hideError`, `displayValidationErrors`, `clearValidationErrors`, `resetForm`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688624807
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688951856
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689060658
+      }
+    ],
+    "5.2 Implement `renderBalance`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688624907
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688952878
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689061507
+      }
+    ],
+    "5.4 Implement `renderTransactionList`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688625000
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689086874
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689208519
+      }
+    ],
+    "6.1 Implement `computeChartData(transactions)` (pure helper)": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688625092
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689087520
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689209060
+      }
+    ],
+    "6.4 Implement `renderChart`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688625187
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689226336
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689290036
+      }
+    ],
+    "7. Checkpoint — Verify render layer": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688625276
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689294925
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689303961
+      }
+    ],
+    "8.1 Implement `addTransaction(name, amount, category)`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688625373
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689311515
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689373637
+      }
+    ],
+    "8.3 Implement `deleteTransaction(id)`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688625489
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689312039
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689373869
+      }
+    ],
+    "8.4 Implement `renderAll`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688625594
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689312347
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689375330
+      }
+    ],
+    "9.1 Implement `handleFormSubmit` and attach to `#transaction-form`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688625692
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689382437
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689492973
+      }
+    ],
+    "9.2 Implement `handleDeleteClick` with event delegation and attach to `#transaction-list`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688625791
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689383382
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689493839
+      }
+    ],
+    "9.3 Implement `init` and call on `DOMContentLoaded`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688625892
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689383884
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689494906
+      }
+    ],
+    "10. Final Checkpoint — Ensure all tests pass": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688625985
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689517808
+      },
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689640082
+      }
+    ],
+    "1. Set up project file structure and HTML shell": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688726163
+      }
+    ],
+    "2. Implement CSS styling": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688826287
+      }
+    ],
+    "1.2 Write unit test: HTML file references and required element presence": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688852607
+      }
+    ],
+    "3. Implement the Storage Layer in `js/app.js`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688941394
+      }
+    ],
+    "4. Implement the Validator in `js/app.js`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783688942137
+      }
+    ],
+    "3.2 Write property test for malformed storage handling (Property 9)": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689078566
+      }
+    ],
+    "3.3 Write unit tests for Storage Layer": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689079475
+      }
+    ],
+    "4.2 Write property test for validation correctness (Property 1)": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689080354
+      }
+    ],
+    "5.3 Write property test for balance sum correctness (Property 6)": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689081307
+      }
+    ],
+    "5. Implement the Render Layer (non-chart) in `js/app.js`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689208652
+      }
+    ],
+    "5.5 Write property test for transaction list reflecting storage (Property 4)": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689215233
+      }
+    ],
+    "5.6 Write property test for transaction rendering fields (Property 5)": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689216297
+      }
+    ],
+    "6.2 Write property test for chart data (Property 7)": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689216945
+      }
+    ],
+    "6.3 Write property test for chart labels (Property 8)": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689218975
+      }
+    ],
+    "6. Implement the Chart Render Layer in `js/app.js`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689290175
+      }
+    ],
+    "8. Implement the State Engine and `renderAll` in `js/app.js`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689375461
+      }
+    ],
+    "9. Implement Event Handlers and Initialization in `js/app.js`": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689495007
+      }
+    ],
+    "8.2 Write property test for transaction creation round-trip (Property 2)": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689508061
+      }
+    ],
+    "8.5 Write unit tests for State Engine": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689508991
+      }
+    ],
+    "9.4 Write property test for form reset after submission (Property 3)": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689509516
+      }
+    ],
+    "9.5 Write unit tests for Event Handlers and Initialization": [
+      {
+        "executionId": "b8a522d1-41b9-4926-a4e2-7286b761f749",
+        "chatSessionId": "sess_2cc6a247-4e2d-4a03-9713-705685d2a579",
+        "timestamp": 1783689510864
+      }
+    ]
+  }
+}

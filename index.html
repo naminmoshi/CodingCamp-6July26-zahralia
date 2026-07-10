@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense &amp; Budget Visualizer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Loading indicator (shown during initial render) -->
+  <div id="loading-indicator" aria-live="polite" aria-label="Loading">Loading...</div>
+
+  <!-- Global error banner -->
+  <div id="error-banner" role="alert" aria-live="assertive" hidden>
+    <span id="error-banner-message"></span>
+    <button type="button" id="error-banner-close" aria-label="Close error message">&times;</button>
+  </div>
+
+  <header>
+    <h1>Expense &amp; Budget Visualizer</h1>
+    <div id="balance-display" aria-live="polite">$0.00</div>
+  </header>
+
+  <main>
+    <!-- Transaction input form -->
+    <section class="input-section">
+      <h2>Add Transaction</h2>
+      <form id="transaction-form" novalidate>
+
+        <div class="form-group">
+          <label for="input-name">Item Name</label>
+          <input
+            type="text"
+            id="input-name"
+            name="name"
+            maxlength="100"
+            autocomplete="off"
+            aria-describedby="error-name"
+            aria-required="true"
+          />
+          <span id="error-name" role="alert" aria-live="polite" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="input-amount">Amount</label>
+          <input
+            type="number"
+            id="input-amount"
+            name="amount"
+            min="0.01"
+            max="999999999.99"
+            step="0.01"
+            autocomplete="off"
+            aria-describedby="error-amount"
+            aria-required="true"
+          />
+          <span id="error-amount" role="alert" aria-live="polite" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="input-category">Category</label>
+          <select
+            id="input-category"
+            name="category"
+            aria-describedby="error-category"
+            aria-required="true"
+          >
+            <option value="">-- Select a category --</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Fun">Fun</option>
+          </select>
+          <span id="error-category" role="alert" aria-live="polite" class="error-message"></span>
+        </div>
+
+        <button type="submit">Add Transaction</button>
+
+      </form>
+    </section>
+
+    <!-- Transaction list -->
+    <section class="list-section">
+      <h2>Transactions</h2>
+      <ul id="transaction-list" aria-label="Transaction list"></ul>
+    </section>
+
+    <!-- Spending chart -->
+    <section class="chart-section">
+      <h2>Spending by Category</h2>
+      <div id="chart-container">
+        <canvas id="spending-chart" aria-label="Spending distribution pie chart" role="img"></canvas>
+        <div id="chart-empty-state" aria-live="polite">No spending data</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Expense &amp; Budget Visualizer &mdash; All data stored locally in your browser.</p>
+  </footer>
+
+  <!-- Chart.js CDN (must be loaded before app.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

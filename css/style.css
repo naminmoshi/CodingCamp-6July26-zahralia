@@ -1,0 +1,371 @@
+/* css/style.css - Expense & Budget Visualizer */
+
+/* ─── Reset & base ─────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background-color: #f5f5f5;
+  min-width: 320px;
+}
+
+/* ─── Utility ───────────────────────────────────────────────────────────────── */
+.hidden {
+  display: none !important;
+}
+
+/* ─── Loading overlay ───────────────────────────────────────────────────────── */
+/* Visible by default; JS removes class="hidden" after render */
+#loading-indicator {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0.92);
+  font-size: 1.125rem;
+  color: #555;
+  letter-spacing: 0.02em;
+}
+
+/* ─── Error banner ──────────────────────────────────────────────────────────── */
+/* Fixed at the top; hidden via the HTML `hidden` attribute by default */
+#error-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #b91c1c;
+  color: #fff;
+  font-size: 0.9375rem;
+}
+
+#error-banner[hidden] {
+  display: none;
+}
+
+#error-banner-message {
+  flex: 1;
+}
+
+#error-banner-close {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.25rem;
+  border-radius: 3px;
+  transition: background-color 0.15s;
+}
+
+#error-banner-close:hover,
+#error-banner-close:focus-visible {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+/* ─── Content column ────────────────────────────────────────────────────────── */
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 720px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* ─── Header / balance ──────────────────────────────────────────────────────── */
+header {
+  padding-block: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+#balance-display {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: -0.01em;
+}
+
+/* ─── Main sections ─────────────────────────────────────────────────────────── */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 0 2rem;
+}
+
+main section {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+main section h2 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* ─── Form ──────────────────────────────────────────────────────────────────── */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group:last-of-type {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.3125rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9375rem;
+  color: #111;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  appearance: auto;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+}
+
+/* Inline validation errors (hidden by default via empty content / JS toggling) */
+.error-message {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.8125rem;
+  color: #b91c1c;
+  min-height: 1em; /* reserve space so layout doesn't jump */
+}
+
+/* Hide when empty so they take no visual space unless there's an error */
+.error-message:empty {
+  display: none;
+}
+
+#error-name,
+#error-amount,
+#error-category {
+  /* inherits .error-message; listed explicitly for specificity clarity */
+}
+
+#transaction-form button[type="submit"] {
+  display: inline-block;
+  padding: 0.5625rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+#transaction-form button[type="submit"]:hover,
+#transaction-form button[type="submit"]:focus-visible {
+  background-color: #1d4ed8;
+  outline: none;
+}
+
+#transaction-form button[type="submit"]:active {
+  background-color: #1e40af;
+}
+
+/* ─── Transaction list ──────────────────────────────────────────────────────── */
+/* Requirement 2.4: scrollable without affecting outside layout */
+#transaction-list {
+  list-style: none;
+  max-height: 320px;
+  overflow-y: auto;
+  /* subtle inset shadow indicates scrollable content */
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+/* Individual transaction items */
+.transaction-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-item:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.transaction-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 0; /* allow text truncation */
+}
+
+.transaction-name {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.transaction-meta {
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+.transaction-amount {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+  color: #111;
+}
+
+.transaction-delete {
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  color: #b91c1c;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.transaction-delete:hover,
+.transaction-delete:focus-visible {
+  background-color: #fef2f2;
+  border-color: #b91c1c;
+  outline: none;
+}
+
+/* Empty state message inside the list */
+.empty-state {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.9375rem;
+}
+
+/* ─── Chart section ─────────────────────────────────────────────────────────── */
+#chart-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+#spending-chart {
+  max-width: 320px;
+  width: 100%;
+}
+
+/* Visible by default; JS adds .hidden when chart is rendered */
+#chart-empty-state {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.9375rem;
+  padding: 2rem 1rem;
+}
+
+/* ─── Footer ────────────────────────────────────────────────────────────────── */
+footer {
+  padding-block: 1.5rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.8125rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+/* ─── Responsive ────────────────────────────────────────────────────────────── */
+/* The layout is single-column from the start (320 px +).
+   We only need to loosen spacing / font sizes at wider viewports. */
+
+@media (min-width: 480px) {
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  #balance-display {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 600px) {
+  header,
+  main,
+  footer {
+    padding-inline: 1.5rem;
+  }
+
+  main section {
+    padding: 1.75rem 2rem;
+  }
+
+  #transaction-list {
+    max-height: 400px;
+  }
+}
